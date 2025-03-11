@@ -3,6 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title>Ahsan's Personal site</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+        }
+
+        /* Dark Theme */
+        body {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+
+        /* Profile Image */
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #1E1E1E;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ol {
+            list-style: none;
+            width: 100%;
+        }
+
+        nav ol li {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+            position: relative;
+        }
+
+        nav ol li:last-child {
+            border-bottom: none;
+        }
+
+        nav ol li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ol li a:hover {
+            color: #007BFF;
+            transform: translateX(5px);
+        }
+
+        /* Dropdown Menu */
+        .menu-item {
+            cursor: pointer;
+        }
+
+        .submenu {
+            display: none;
+            background: #222;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .submenu li {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .submenu li:last-child {
+            border-bottom: none;
+        }
+
+        .submenu li a {
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+        /* Show dropdown on hover */
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        /* Stylish Button */
+        .btn {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #007BFF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+    </style>
+ 
+    
 </head>
 <body>
 
@@ -11,9 +139,9 @@
     
    <nav>
     <ol>
-        <li <a href="index.html">home</a></li>
-        <li> <a href="ahsan\live.html">where i live</a></li>
-        <li><a href="ahsan\work.html">what i do</a></li>
+        <li><a href="index1.html">home</a></li>
+        <li> <a href="live.html">where i live</a></li>
+        <li><a href="work.html">what i do</a></li>
         <li>My interest
             <ul>
                 <li><a href="interest/reading.html">Reading</a></li>
